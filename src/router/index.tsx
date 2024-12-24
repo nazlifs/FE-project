@@ -1,5 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Dashboard, Login, SignUp } from "../pages";
+import {
+  Daftar,
+  Dashboard,
+  Hero,
+  Jadwal,
+  Laporan,
+  Login,
+  SignUp,
+  Ujian,
+} from "../pages";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +24,31 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+
+  {
+    path: "/daftar",
+    element: <Daftar />,
+  },
+
+  {
+    path: "/jadwal",
+    element: <Jadwal />,
+  },
+
+  {
+    path: "/laporan",
+    element: <Laporan />,
+  },
+
+  {
+    path: "/hero",
+    element: <Hero />,
+  },
+
+  {
+    path: "/ujian",
+    element: <Ujian />,
   },
 ]);
 
